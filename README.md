@@ -1,7 +1,7 @@
-# LearnHTMLAgilityPack
+# Learn HTML Agility Pack Step by step --> Web Scraping using C# 
 ## Scrape websites using HTML Agility Pack C#
 
-// How to Get elements by class in Html Agility Pack C# 
+### How to Get elements by class in Html Agility Pack C# 
 ```
 using System;
 using HtmlAgilityPack;
