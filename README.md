@@ -2,6 +2,9 @@
 ## Scrape websites using HTML Agility Pack C#
 
 ### How to Get elements by class in Html Agility Pack C# 
+
+HtmlAgility is a very great tool as we have seen how it can be used to traverse the entire HTML content of webpages in C#, it can also be understood that the HTML content can be manipulated with much ease.
+
 ```
 using System;
 using HtmlAgilityPack;
