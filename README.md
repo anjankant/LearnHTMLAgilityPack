@@ -1,12 +1,12 @@
 # Learn HTML Agility Pack Step by step --> Web Scraping using C# 
 ## Scrape websites using HTML Agility Pack C#
-## Chapter 1: What is HTML Agility Pack? :cowboy_hat_face:	
+## :v: Chapter 1: What is HTML Agility Pack? :cowboy_hat_face:	
 After the preamble, now exactly what is **HTML agility pack** :heart_eyes: and why it is used? Many times, it becomes a requirement to read or what is technically called as parse an HTML document where the source could be a file, or a string or another web source. Thus, what is **HTML agility pack c#** is that it is one of the .NET libraries that gives the C# developer :kissing: to read and write the DOM (Document Object Model) and has explicit support for **plain XPath** or **XSLT** and the bonus is :relaxed:, you don't even have to know about these terminologies? The library is so forgiving that it won't trouble much with its functionality even if the source of HTML is malformed in standards. Thus, it's the best choice to rely on this library instead of writing up the parsing code all by yourself.</br>
 </br>
 [Subscribe YouTube Channel] (http://bit.ly/2lSE3r6)
 
 ## Let's Kick off with HTML Agility Pack :yum:
-### Chapter 2: Learn to Install HTML agility pack and Load an HTML Document
+### :v:	Chapter 2: Learn to Install HTML agility pack and Load an HTML Document
 - First, you can install nuget package from the [link](https://nuget.org/packages/HtmlAgilityPack).
 - Under the section, **Package Manager** copy the install code. For example, if there is content such as >>> **PM> Install-Package HtmlAgilityPack -Version x.x.x**, then you shall copy the text that follows after PM>.
 - After copying the code, now go to your **Visual Studio Application** and click on **Tools menu** in the menu bar.
@@ -23,7 +23,7 @@ HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
 doc = web.load(“https://technologycrowds.com”);
 ```
 
-### Chapter 3: How to Get elements by class in Html Agility Pack C# 
+### :v:	Chapter 3: How to Get elements by class in Html Agility Pack C# 
 
 HtmlAgility is a very great tool as we have seen how it can be used to traverse the entire HTML content of webpages in C#, it can also be understood that the HTML content can be manipulated with much ease.
 
@@ -56,7 +56,7 @@ public class Program
 }
 ```
 
-### Chapter 4: Extract Meta-Information from the website using HTML agility pack
+### :v:	Chapter 4: Extract Meta-Information from the website using HTML agility pack
 
 #### Namespace
 
