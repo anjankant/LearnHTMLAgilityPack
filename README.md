@@ -92,5 +92,56 @@ static void GetMetaInformation(HtmlAgilityPack.HtmlDocument htmldoc, string valu
  }
 }
 ```
+### :v: Chapter 5: Select Nodes using Html Agility Pack
+#### SelectNodes()
+
+#### :point_right: Coding Snippet
+
+```
+var html = @"
+var html = @"<TD>
+</TD>
+<TD>
+<INPUT value=Technology>
+<INPUT value=Crowds>
+</TD>
+var htmlDoc = new HtmlDocument();
+htmlDoc.LoadHtml(html);
+var node = htmlDoc.DocumentNode.SelectNodes("//td/input");
+
+foreach (var node in nodes)
+{
+  Console.WriteLine(node.Attributes["value"].Value);
+}
+```
+### Output
+
+- Technology
+- Crowds
+
+#### SelectSingleNode(String)
+SelectSingleNode is a type of function that takes in an XPath expression and produces a result that contains the first HtmlAgilityPack.HtmlNode. 
+The return value could also be null if there are no matching nodes.
+
+#### :point_right: Coding Snippet
+
+```
+var html = @"
+var html = @"<TD>
+</TD>
+<TD>
+<INPUT value=Technology>
+<INPUT value=Crowds>
+</TD>
+var htmlDoc = new HtmlDocument();
+htmlDoc.LoadHtml(html);
+var node = htmlDoc.DocumentNode.SelectNodes("//td/input").First()
+          .Attributes["value"].Value;
+Console.WriteLine(node);
+``
+
+### Output
+- Technology
+
 
 ** [Free Video Library: Learn HTML Agility Pack Step by Step](https://www.youtube.com/playlist?list=PLJufu9snJTv4tHfmsR-6QA4SPYj5vmp87) **
