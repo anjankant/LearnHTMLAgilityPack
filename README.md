@@ -1,4 +1,5 @@
 # Learn HTML Agility Pack Step by step --> Web Scraping using C# 
+## [Visit Website for More...](https://www.technologycrowds.com/search/label/HTML%20Agility%20Pack)
 ## Scrape websites using HTML Agility Pack C#
 ## :v: Chapter 1: What is HTML Agility Pack? :cowboy_hat_face:	
 After the preamble, now exactly what is **HTML agility pack** :heart_eyes: and why it is used? Many times, it becomes a requirement to read or what is technically called as parse an HTML document where the source could be a file, or a string or another web source. Thus, what is **HTML agility pack c#** is that it is one of the .NET libraries that gives the C# developer :kissing: to read and write the DOM (Document Object Model) and has explicit support for **plain XPath** or **XSLT** and the bonus is :relaxed:, you don't even have to know about these terminologies? The library is so forgiving that it won't trouble much with its functionality even if the source of HTML is malformed in standards. Thus, it's the best choice to rely on this library instead of writing up the parsing code all by yourself.</br>
