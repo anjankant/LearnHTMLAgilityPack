@@ -138,9 +138,9 @@ htmlDoc.LoadHtml(html);
 var node = htmlDoc.DocumentNode.SelectNodes("//td/input").First()
           .Attributes["value"].Value;
 Console.WriteLine(node);
-``
+```
 
 ### Output
 - Technology
 
-[Free Video Library: Learn HTML Agility Pack Step by Step](https://www.youtube.com/playlist?list=PLJufu9snJTv4tHfmsR-6QA4SPYj5vmp87)
+** [Free Video Library: Learn HTML Agility Pack Step by Step](https://www.youtube.com/playlist?list=PLJufu9snJTv4tHfmsR-6QA4SPYj5vmp87) **
