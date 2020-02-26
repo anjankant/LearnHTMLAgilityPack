@@ -143,5 +143,4 @@ Console.WriteLine(node);
 ### Output
 - Technology
 
-\n
-** [Free Video Library: Learn HTML Agility Pack Step by Step](https://www.youtube.com/playlist?list=PLJufu9snJTv4tHfmsR-6QA4SPYj5vmp87) **
+[Free Video Library: Learn HTML Agility Pack Step by Step](https://www.youtube.com/playlist?list=PLJufu9snJTv4tHfmsR-6QA4SPYj5vmp87)
