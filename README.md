@@ -144,4 +144,122 @@ Console.WriteLine(node);
 ### Output
 - Technology
 
+## Chapter 6: :v:  HTML Manipulation using html agility pack
+
+### Inner HTML
+
+#### :point_right: Coding Snippet
+```
+var html =
+@"<body>
+<h1>.Net Core</h1>
+This is <b>C#, ASP.Net</b> paragraph
+   <h1>
+.Net Core with Angular</h1>
+This is <b>HTML Agility Pack</b> sample
+
+  </body>";
+
+var htmlDoc = new HtmlDocument();
+htmlDoc.LoadHtml(html);
+
+var htmlNodes = htmlDoc.DocumentNode.SelectNodes("//body/p");
+
+foreach (var node in htmlNodes)
+{
+
+ Console.WriteLine(node.InnerHtml);
+}
+```
+
+### Ouput
+
+- This is <b>C#, ASP.Net</b> paragraph This is <b>HTML Agility Pack</b> sample
+
+
+
+### Inner Text
+
+#### :point_right: Coding Snippet
+
+```
+var html =
+@"<body>
+<h1>
+.Net Core</h1>
+This is <b>C#, ASP.Net</b> paragraph
+   <h1>
+.Net Core with Angular</h1>
+This is <b>HTML Agility Pack</b> sample
+  </body>";
+
+var htmlDoc = new HtmlDocument();
+htmlDoc.LoadHtml(html);
+
+var htmlNodes = htmlDoc.DocumentNode.SelectNodes("//body/p");
+
+foreach (var node in htmlNodes)
+{
+ Console.WriteLine(node.InnerText);
+}
+```
+
+### Output
+- This is C#, ASP.Net paragraph This is HTML Agility Pack sample
+
+### Outer Html
+
+#### :point_right: Coding Snippet
+
+```
+var html =
+@"<body>
+<h1>.Net Core</h1>
+<p>This is <b>C#, ASP.Net</b> paragraph</p>
+   
+<h1>.Net Core with Angular</h1>
+<p>This is <b>HTML Agility Pack</b> sample</p>
+</body>";
+
+ var htmlDoc = new HtmlDocument();
+ htmlDoc.LoadHtml(html);
+
+ var htmlNodes = htmlDoc.DocumentNode.SelectNodes("//body/p");
+
+ foreach (var node in htmlNodes)
+ {
+  Console.WriteLine(node.OuterHtml);
+ }
+ ```
+
+ ### Output
+ - <h1>.Net Core</h1> <h1>.Net Core with Angular</h1>
+
+### Parent Node
+
+#### :point_right: Coding Snippet
+
+```
+var html =
+@"<body>
+<h1>.Net Core</h1>
+<p>This is <b>C#, ASP.Net</b> paragraph</p>   
+<h1>.Net Core with Angular</h1>
+<p>This is <b>HTML Agility Pack</b> sample</p>
+</body>";
+
+var htmlDoc = new HtmlDocument();
+htmlDoc.LoadHtml(html);
+
+var node = htmlDoc.DocumentNode.SelectSingleNode("//body/h1");
+
+HtmlNode parentNode = node.ParentNode;
+Console.WriteLine(parentNode.Name);
+```
+
+### Output
+- body
+
+[read more...](https://www.technologycrowds.com/2018/09/html-manipulation-using-html-agility-pack.html)
+
 ** [Free Video Library: Learn HTML Agility Pack Step by Step](https://www.youtube.com/playlist?list=PLJufu9snJTv4tHfmsR-6QA4SPYj5vmp87) **
